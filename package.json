@@ -1,0 +1,36 @@
+{
+  "name": "to-centesimal",
+  "version": "0.0.0",
+  "description": "try to convert units of currency (think dollars) into centesimal values",
+  "main": "index.js",
+  "dependencies": {
+    "round-precision": "~1.0.0"
+  },
+  "devDependencies": {
+    "array-unique": "~0.2.1",
+    "browserify": "~13.0.0",
+    "currency-symbol-map": "~2.2.0",
+    "escape-regexp": "~0.0.1",
+    "size-table": "~0.2.0",
+    "tape": "~4.4.0"
+  },
+  "scripts": {
+    "size": "browserify index.js | size-table",
+    "build": "node bin/generate.js",
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:michaelrhodes/to-centesimal"
+  },
+  "keywords": [
+    "cents",
+    "centesimal"
+  ],
+  "author": "Michael Rhodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelrhodes/to-centesimal/issues"
+  },
+  "homepage": "https://github.com/michaelrhodes/to-centesimal"
+}
