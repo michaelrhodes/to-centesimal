@@ -33,9 +33,9 @@ cents('1c')
 
 | compression             |    size |
 | :---------------------- | ------: |
-| to-centesimal.js        | 2.35 kB |
-| to-centesimal.min.js    | 1.65 kB |
-| to-centesimal.min.js.gz |   855 B |
+| to-centesimal.js        | 2.36 kB |
+| to-centesimal.min.js    | 1.66 kB |
+| to-centesimal.min.js.gz |   864 B |
 
 
 ## Caveats
