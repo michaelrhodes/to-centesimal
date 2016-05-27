@@ -6,7 +6,7 @@ var esc = require('escape-regexp')
 symbols.GHC = '₵'
 
 var noncents = (function () {
-  var noncents = ['\\.']
+  var noncents = ['\\.', '[A-Z]+\\\$']
   var symbol
   for (var currency in symbols) {
     symbol = symbols[currency]

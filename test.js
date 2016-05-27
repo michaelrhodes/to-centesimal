@@ -4,6 +4,7 @@ var cents = require('./index')
 test('it works, at least sometimes',
   function (assert) {
     assert.equal(cents('$1.50'), 150)
+    assert.equal(cents('NZ$1.50'), 150)
     assert.equal(cents('£1.25'), 125)
     assert.equal(cents('£1'), 100)
     assert.equal(cents('€10.50'), 1050)
