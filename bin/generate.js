@@ -3,7 +3,9 @@ var path = require('path')
 var symbols = require('currency-symbol-map/map')
 var unique = require('array-unique')
 var esc = require('escape-regexp')
+
 symbols.GHC = '₵'
+symbols.CHF = [symbols.CHF, 'Fr']
 
 var noncents = (function () {
   var noncents = ['\\.', '[A-Z]+\\\$']
@@ -11,7 +13,9 @@ var noncents = (function () {
   for (var currency in symbols) {
     symbol = symbols[currency]
     if (symbols.hasOwnProperty(currency) && !!symbol) {
-      noncents.push(esc(symbol))
+      [].concat(symbol).forEach(function (symbol) {
+        noncents.push(esc(symbol))
+      })
     }
   }
   return new RegExp('^[0-9\.]*('

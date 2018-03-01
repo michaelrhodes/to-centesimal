@@ -11,6 +11,7 @@ test('it works, at least sometimes',
     assert.equal(cents('¥1'), 100)
     assert.equal(cents('1¢'), 1)
     assert.equal(cents('1c'), 1)
-    assert.ok(isNaN(cents('a1')))
+    assert.equal(cents('0.30Fr'), 30)
+    assert.equal(isNaN(cents('a1')), true)
     assert.end()
   })

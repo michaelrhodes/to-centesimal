@@ -1,6 +1,6 @@
 # to-centesimal
 
-This is a little module that tries to convert units of currency (think dollars) into centesimal values. 
+This is a little module that tries to convert units of currency (think dollars) into centesimal values.
 
 [![Build status](https://travis-ci.org/michaelrhodes/to-centesimal.svg?branch=master)](https://travis-ci.org/michaelrhodes/to-centesimal)
 
