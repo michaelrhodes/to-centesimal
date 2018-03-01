@@ -1,6 +1,6 @@
 {
   "name": "to-centesimal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "try to convert units of currency (think dollars) into centesimal values",
   "main": "index.js",
   "dependencies": {
